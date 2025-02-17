@@ -11,7 +11,7 @@ import Metal3DModel
 struct ContentView: View {
     var body: some View {
         Button("generate") {
-            let model = try! SingleMeshModel3D(assetURL: Bundle.main.url(forResource: "box", withExtension: "obj")!)
+            let model = try! SingleMeshModel3D(assetURL: Bundle.main.url(forResource: "icosphere", withExtension: "usdc")!)
             dump(model.mesh.vertices)
         }
     }
